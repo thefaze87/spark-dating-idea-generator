@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light;
+  color: #213547;
+  background-color: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  @apply bg-gradient-to-br from-yellow-50 to-orange-100;
+}
+
+ion-content {
+  --background: transparent;
+}
+
+ion-input {
+  --padding-start: 1rem;
+  --padding-end: 1rem;
+  --placeholder-color: #9ca3af;
+  --placeholder-opacity: 1;
+}
+
+ion-button {
+  --border-radius: 0.5rem;
+  --box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+// Remove the media query for dark mode to keep consistent light theme
