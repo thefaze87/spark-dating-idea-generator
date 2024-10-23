@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'spark-green': '#00A848',
+      },
+    },
   },
   plugins: [],
+  important: true,
 }
