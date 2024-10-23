@@ -1,0 +1,6 @@
+{
+  "appId": "dev.markfasel.datespark",
+  "appName": "DateSpark",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}
