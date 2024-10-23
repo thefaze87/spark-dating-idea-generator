@@ -16,7 +16,7 @@ function InputForm({ onSubmit, isLoading }) {
 				value={userInput}
 				placeholder='E.g., Outdoor activity for a sunny day...'
 				onIonChange={(e) => setUserInput(e.detail.value)}
-				className='border-2 border-gray-300 rounded-lg p-4 w-full text-gray-700 focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400 transition duration-300'
+				className="custom-input"
 			/>
 			<IonButton
 				expand='block'

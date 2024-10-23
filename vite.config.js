@@ -8,5 +8,12 @@ export default defineConfig(({ mode }) => {
       'process.env.VITE_OPENAI_API_KEY': JSON.stringify(env.VITE_OPENAI_API_KEY)
     },
     plugins: [react()],
+    css: {
+      preprocessorOptions: {
+        scss: {
+          // We don't need additionalData anymore
+        }
+      }
+    }
   }
 })

@@ -4,6 +4,7 @@ import axios from 'axios';
 import Header from './components/Header';
 import InputForm from './components/InputForm';
 import ResultCard from './components/ResultCard';
+import './App.scss';
 
 function App() {
 	const [dateIdea, setDateIdea] = useState('');
@@ -45,7 +46,7 @@ function App() {
 				},
 				{
 					headers: {
-						Authorization: `Bearer ${import.meta.env.VITE_OPENAI_API_KEY}`,
+						Authorization: `Bearer ${apiKey}`,
 						'Content-Type': 'application/json',
 					},
 				}
