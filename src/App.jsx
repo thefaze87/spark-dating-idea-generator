@@ -78,14 +78,14 @@ function App() {
 	};
 
 	return (
-		<IonApp className="spark-app">
-			<IonContent className="ion-padding" style={{ '--background': '#f2f2f7' }}>
-				<div className="max-w-md mx-auto">
+		<IonApp>
+			<IonContent className="ion-padding">
+				<div className="content-container">
 					<Header />
 					<InputForm onSubmit={generateDateIdea} isLoading={isLoading} isRegenerating={isRegenerating} />
 					{dateIdea && <ResultCard dateIdea={dateIdea} onGenerateAnother={generateDateIdea} isRegenerating={isRegenerating} />}
 				</div>
-				<div className="max-w-md mx-auto mt-4">
+				<div className="max-w-md mx-auto mt-2 mb-8">
 					<p className='text-xs text-gray-500'>Results powered by ChatGPT</p>
 				</div>
 			</IonContent>

@@ -7,16 +7,16 @@ function ResultCard({ dateIdea, onGenerateAnother, isRegenerating }) {
 	};
 
 	return (
-		<IonCard className="!rounded-xl !shadow-md !overflow-hidden">
-			<IonCardContent className="!p-6">
-				<h2 className="!text-3xl !font-bold !text-gray-900 !mb-4">
+		<IonCard className="!rounded-xl !shadow-md !overflow-hidden !mx-0 !mb-2">
+			<IonCardContent className="!p-4">
+				<h2 className="!text-2xl !font-bold !text-gray-900 !mb-3">
 					Your Perfect Date
 				</h2>
-				<div className={`!bg-gray-100 !rounded-lg !p-4 !mb-4 ${isRegenerating ? 'animate-pulse' : ''}`}>
+				<div className={`!bg-gray-100 !rounded-lg !p-3 !mb-3 ${isRegenerating ? 'animate-pulse' : ''}`}>
 					{isRegenerating ? (
-						<div className="h-20 bg-gray-200 rounded"></div>
+						<div className="h-16 bg-gray-200 rounded"></div>
 					) : (
-						<p className="!text-base !text-gray-700 !leading-relaxed">{dateIdea}</p>
+						<p className="!text-sm !text-gray-700 !leading-relaxed">{dateIdea}</p>
 					)}
 				</div>
 				<div className="!flex !justify-center !items-center">

@@ -26,6 +26,23 @@ body {
 
 ion-content {
   --background: #f2f2f7;
+  --padding-top: calc(env(safe-area-inset-top) + 20px);
+  --padding-bottom: calc(env(safe-area-inset-bottom) + 40px);
+  --padding-start: 16px;
+  --padding-end: 16px;
+}
+
+// Add this for better padding on iOS devices
+ion-app {
+  background-color: #f2f2f7;
+}
+
+.content-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 12px;
+  padding-top: calc(env(safe-area-inset-top) + 12px);
+  padding-bottom: calc(env(safe-area-inset-bottom) + 32px);
 }
 
 ion-input {
