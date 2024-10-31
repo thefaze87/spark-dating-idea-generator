@@ -1,0 +1,7 @@
+{
+  "ios": {
+    "icon": {
+      "source": "resources/icon/icon.png"
+    }
+  }
+}

@@ -2,5 +2,16 @@
   "appId": "dev.markfasel.datespark",
   "appName": "DateSpark",
   "webDir": "dist",
-  "bundledWebRuntime": false
+  "bundledWebRuntime": false,
+  "resources": {
+    "icon": {
+      "ios": {
+        "src": "resources/icon/icon.png",
+        "sizes": [
+          20, 29, 40, 50, 57, 58, 60, 72, 76, 80, 87, 100, 114, 120, 144, 152,
+          167, 180, 1024
+        ]
+      }
+    }
+  }
 }
